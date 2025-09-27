@@ -115,7 +115,7 @@ function App() {
               Escolha seu Lote
               <Sparkles className="text-yellow-400" />
             </h2> */}
-              <h2 className="text-gray-300 font-semibold text-3xl mx-3">Garante já o seu ingresso para a aventura galáctica!</h2>
+              <h2 className="text-gray-100 font-semibold text-3xl mx-3">Garanta já seu ingresso para essa aventura galáctica!</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -132,21 +132,21 @@ function App() {
                 >
                   <div className="text-center">
                     {lote.especial ? (
-                      <Sparkles className="w-8 h-8 text-white mx-auto mb-4" />
+                      <Sparkles className="w-8 h-8 text-[#30466E] mx-auto mb-4" />
                     ) : (
                       <Star className="w-8 h-8 text-white mx-auto mb-4" />
                     )}
-                    <h3 className="text-2xl font-bold mb-2 text-white">{lote.nome}</h3>
-                    <p className="text-white/90 mb-2">{lote.descricao}</p>
+                    <h3 className={`text-2xl font-bold mb-2 ${lote.id === 1 ? "text-[#30466E]" : "text-white"}`}>{lote.nome}</h3>
+                    <p className={`${lote.id === 1 ? "text-[#30466E]" : "text-white/90"} mb-2`}>{lote.descricao}</p>
                     {lote.data && (
-                      <p className="text-white font-semibold mb-4">{lote.data}</p>
+                      <p className={`${lote.id === 1 ? "text-[#30466E]" : "text-white"} mb-4`}>{lote.data}</p>
                     )}
                     {!lote.data && !lote.emBreve && <div className="mb-4"></div>}
 
                     <Button
                       onClick={() => handleLoteClick(lote.url)}
                       disabled={lote.emBreve}
-                      className={`w-full hover:scale-105 transition-all duration-300 bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl border-0 ${lote.emBreve ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+                      className={`w-full hover:scale-105 transition-all duration-300 bg-white/20 hover:bg-white/30 ${lote.id === 1 ? "text-[#30466E]" : "text-white"} font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl border-0 ${lote.emBreve ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
                     >
                       {lote.emBreve ? 'Em Breve' : 'Comprar Agora'}
                     </Button>
