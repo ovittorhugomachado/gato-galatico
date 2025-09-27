@@ -28,22 +28,22 @@ function App() {
       corSolida: "#EC2272",
       url: "https://www.sympla.com.br/evento/gato-galactico-mega-pool-lote-1/3140924?referrer=www.google.com"
     },
-    {
-      id: 3,
-      nome: "2º Lote",
-      descricao: "EM BREVE",
-      corSolida: "#51B748",
-      url: "https://www.sympla.com.br/lote2",
-      emBreve: true
-    },
-    {
-      id: 4,
-      nome: "3º Lote",
-      descricao: "EM BREVE",
-      corSolida: "#F9A61A",
-      url: "https://www.sympla.com.br/lote3",
-      emBreve: true
-    }
+    // {
+    //   id: 3,
+    //   nome: "2º Lote",
+    //   descricao: "EM BREVE",
+    //   corSolida: "#51B748",
+    //   url: "https://www.sympla.com.br/lote2",
+    //   emBreve: true
+    // },
+    // {
+    //   id: 4,
+    //   nome: "3º Lote",
+    //   descricao: "EM BREVE",
+    //   corSolida: "#F9A61A",
+    //   url: "https://www.sympla.com.br/lote3",
+    //   emBreve: true
+    // }
   ]
 
   const handleLoteClick = (url) => {
@@ -110,15 +110,19 @@ function App() {
 
           {/* Seção de ingressos */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+            {/* <h2 className="text-4xl font-bold text-white mb-4 flex items-center justify-center gap-3">
               <Sparkles className="text-yellow-400" />
               Escolha seu Lote
               <Sparkles className="text-yellow-400" />
-            </h2>
-            <p className="text-gray-300 text-lg">Garante já o seu ingresso para a aventura galáctica!</p>
+            </h2> */}
+            <div className='flex justify-center'>
+              <Sparkles className="text-yellow-400" />
+              <h2 className="text-gray-300 font-semibold text-3xl mx-3">Garante já o seu ingresso para a aventura galáctica!</h2>
+              <Sparkles className="text-yellow-400" />
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {lotes.map((lote) => (
               <div
                 key={lote.id}
