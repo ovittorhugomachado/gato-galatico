@@ -24,8 +24,9 @@ function App() {
     {
       id: 2,
       nome: "1º Lote",
-      descricao: "Primeiro Lote Promocional",
+      descricao: "Promocional",
       corSolida: "#EC2272",
+      data: "Gato Galáctico Mega Pool",
       url: "https://www.sympla.com.br/evento/gato-galactico-mega-pool-lote-1/3140924?referrer=www.google.com"
     },
     // {
