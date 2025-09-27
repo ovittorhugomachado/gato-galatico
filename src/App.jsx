@@ -115,11 +115,7 @@ function App() {
               Escolha seu Lote
               <Sparkles className="text-yellow-400" />
             </h2> */}
-            <div className='flex justify-center'>
-              <Sparkles className="text-yellow-400" />
               <h2 className="text-gray-300 font-semibold text-3xl mx-3">Garante já o seu ingresso para a aventura galáctica!</h2>
-              <Sparkles className="text-yellow-400" />
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
