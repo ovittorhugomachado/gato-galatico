@@ -14,7 +14,7 @@ function App() {
   const lotes = [
     {
       id: 1,
-      nome: "MEET AND GREET",
+      nome: "Encontro com Gato Galáctico",
       descricao: "Encontro especial com o Gato",
       data: "02 de Outubro",
       corSolida: "#F6E835",
