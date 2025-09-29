@@ -18,7 +18,7 @@ function App() {
       //descricao: "Encontro especial com o Gato",
       data: "02 de Outubro",
       corSolida: "#F6E835",
-      url: "https://www.sympla.com.br/evento/meet-and-greet-gato-galactico-mega-pool/3140678",
+      url: "https://www.sympla.com.br/evento/encontro-com-gato-galactico/3147163",
       especial: true
     },
     {
