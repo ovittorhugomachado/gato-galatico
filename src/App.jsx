@@ -16,7 +16,7 @@ function App() {
       id: 1,
       nome: "Encontro com Gato Galáctico",
       //descricao: "Encontro especial com o Gato",
-      data: "12 de Outubro",
+      data: "12 de Novembro",
       corSolida: "#F6E835",
       url: "https://www.sympla.com.br/evento/encontro-com-gato-galactico/3147163",
       especial: true
