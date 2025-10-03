@@ -163,7 +163,7 @@ function App() {
 
           {/* Informações adicionais */}
           <div className="text-center mt-16">
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20 max-w-2xl mx-auto">
+           <div className="bg-white/10 flex flex-col backdrop-blur-md rounded-xl p-8 border border-white/20 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">Informações Importantes</h3>
               <p className="text-gray-300 mb-4">
                 Ingressos disponíveis no local ou através do site oficial
@@ -179,6 +179,17 @@ function App() {
               >
                 www.sympla.com.br
               </a>
+              <a
+  href="https://docs.google.com/document/d/1VTjPyx07QO_1-9lqp1qiAODz-dfFM3oE/edit?usp=sharing&ouid=102900673067841125183&rtpof=true&sd=true"
+  target="_blank"
+  style={{fontSize: "15px"}}
+  rel="noopener noreferrer"
+  class="inline-flex items-center mx-auto justify-center w-fit gap-2 mt-4 text-white px-5 py-2.5 rounded-lg font-medium text-sm
+         bg-white/20 backdrop-blur-md border border-white/30
+         hover:bg-white/30"
+>
+  Acesse o Regulamento
+</a>
             </div>
           </div>
 
