@@ -23,10 +23,10 @@ function App() {
     },
     {
       id: 2,
-      nome: "1º Lote",
-      descricao: "Promocional",
+      nome: "Parque Gato Galáctico Mega Pool",
+      //descricao: "Promocional",
       corSolida: "#EC2272",
-      data: "Gato Galáctico Mega Pool",
+      //data: "Gato Galáctico Mega Pool",
       url: "https://www.sympla.com.br/evento/gato-galactico-mega-pool-lote-1/3140924?referrer=www.google.com"
     },
     // {
@@ -123,15 +123,15 @@ function App() {
             {lotes.map((lote) => (
               <div
                 key={lote.id}
-                className="relative group"
+                className="relative group h-full"
                 onMouseEnter={() => setHoveredLote(lote.id)}
                 onMouseLeave={() => setHoveredLote(null)}
               >
                 <div
-                  className="relative rounded-xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105"
+                  className="relative flex items-center justify-center rounded-xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105 min-h-[250px]" // Adicionada altura mínima
                   style={{ backgroundColor: lote.corSolida }}
                 >
-                  <div className="text-center">
+                  <div className="text-center flex flex-col justify-center">
                     {lote.especial ? (
                       <Sparkles className="w-8 h-8 text-[#30466E] mx-auto mb-4" />
                     ) : (
